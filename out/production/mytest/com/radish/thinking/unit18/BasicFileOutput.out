@@ -1,0 +1,27 @@
+1: package com.radish.thinking.unit18;
+2: 
+3: import java.io.*;
+4: 
+5: public class BasicFileOutput {
+6:     static String file = "BasicFileOutput.out";
+7: 
+8:     public static void main(String[] args) throws IOException {
+9:         BufferedReader in = new BufferedReader(
+10:                 new StringReader(
+11:                         BufferedInputFile.read(BufferedInputFile.src + "BasicFileOutput.java")
+12:                 )
+13:         );
+14:         PrintWriter out = new PrintWriter(
+15:                 new BufferedWriter(
+16:                         new FileWriter(BufferedInputFile.src + file)
+17:                 )
+18:         );
+19:         int lineCount = 1;
+20:         String s;
+21:         while ((s = in.readLine()) != null)
+22:             out.println(lineCount++ + ": " + s);
+23:         out.close();
+24:         System.out.println(BufferedInputFile.read(BufferedInputFile.src + file));
+25: 
+26:     }
+27: }

@@ -1,0 +1,63 @@
+                           reor_id: 65656019
+                     reor_sellerId: 1528739
+                      reor_storeId: 1316009
+                   reor_customerId: 65466905
+                reor_prepaidCardId: 1563899
+                 reor_serialNumber: 20011100386100005
+                  reor_description: NULL
+                  reor_createdTime: 2020-01-11 00:06:27
+                     reor_discount: NULL
+               reor_discountInfoId: NULL
+                  reor_totalAmount: 0.01
+             reor_receivableAmount: 0.01
+        reor_otherReceivableAmount: 0.00
+               reor_actuallyAmount: 0.01
+               reor_discountAmount: 0.00
+        reor_preferenceTotalAmount: 0.00
+               reor_consumerNumber: 1
+         reor_gifttokenTotalAmount: 0.00
+               reor_gifttokenCount: 0
+             reor_goodsTotalAmount: 0.00
+     reor_goodsDiscountTotalAmount: 0.00
+                   reor_goodsCount: 0
+       reor_mergeCardPaymentAmount: 0.00
+reor_mergeExpenseCardPaymentAmount: 0.00
+          reor_expenseCardSellerId: 1528739
+                  reor_eraseAmount: 0.00
+                 reor_changeAmount: 0.00
+                reor_paymentAmount: 0.01
+                  reor_paymentType: 4
+              reor_paymentProvider: 
+               reor_paymentMessage: NULL
+                  reor_paymentTime: NULL
+                   reor_authMethod: 0
+                   reor_outTradeId: 4200000514202001112923296510
+                   reor_operatorId: 65466905
+                    reor_invoiceNo: 122087910000039532
+                   reor_postscript: NULL
+                       reor_status: 3
+                 reor_finishedTime: 2020-01-11 00:06:33
+             reor_revokeOperatorId: NULL
+                 reor_revokeRemark: NULL
+                   reor_revokeTime: NULL
+                  reor_updatedTime: 2020-01-11 00:06:33
+               reor_lastOperatorId: NULL
+             reor_lastOperatedTime: NULL
+                      reor_version: 2
+              reor_unifiedOrderIds: NULL
+              reor_outSerialNumber: 20011100386100005
+                   reor_deviceInfo: NULL
+                 reor_deviceIpAddr: NULL
+                 reor_operatorCode: NULL
+                   reor_deviceCode: NULL
+        reor_isPrepaidCardDiscount:  
+                    reor_channelId: 6789
+                reor_goodsVipPrice: 0.00
+                  reor_callBackUrl: NULL
+               reor_isCallBackOver:  
+                reor_relateOrderId: NULL
+                 reor_refundAmount: 0.00
+                     reor_secretId: 10000
+                    reor_preAmount: 0.00
+                  reor_preDiscount:  
+                       reor_dpllId: NULL
