@@ -1,4 +1,4 @@
-package com.example.test;
+package com.radish.test;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.example.proxy;
+package com.radish.proxy;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -17,7 +17,7 @@ public class ReflectionTest {
             Class<HelloWorldImpl> helloWorldClass = HelloWorldImpl.class;
             HelloWorldImpl helloWorld1 = new HelloWorldImpl();
             Class<? extends HelloWorldImpl> aClass = helloWorld1.getClass();
-            Class<?> helloWorldImpl = Class.forName("com.example.proxy.HelloWorldImpl");
+            Class<?> helloWorldImpl = Class.forName("com.radish.proxy.HelloWorldImpl");
 
             try {
                 HelloWorldImpl helloWorld = (HelloWorldImpl) helloWorldImpl.newInstance();

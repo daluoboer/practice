@@ -1,4 +1,4 @@
-package com.example.leetcode.interesting;
+package com.radish.leetcode.interesting;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.example.concurrents;
+package com.radish.concurrents;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

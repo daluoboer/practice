@@ -1,4 +1,4 @@
-package com.example.classLoader;
+package com.radish.classLoader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +29,7 @@ public class ClassLoaderTest {
             }
         };
 
-        Object obj = myLoader.loadClass("com.example.classLoader.ClassLoaderTest").newInstance();
+        Object obj = myLoader.loadClass("com.radish.classLoader.ClassLoaderTest").newInstance();
         System.out.println(obj.getClass());
         System.out.println(obj instanceof ClassLoaderTest);
     }

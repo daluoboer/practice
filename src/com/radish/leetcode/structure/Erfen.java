@@ -1,4 +1,4 @@
-package com.example.leetcode.structure;
+package com.radish.leetcode.structure;
 
 import java.util.ArrayList;
 import java.util.Arrays;

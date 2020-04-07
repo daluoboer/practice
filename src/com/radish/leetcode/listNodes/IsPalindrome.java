@@ -1,4 +1,4 @@
-package com.example.leetcode.listNodes;
+package com.radish.leetcode.listNodes;
 
 import java.util.ArrayList;
 

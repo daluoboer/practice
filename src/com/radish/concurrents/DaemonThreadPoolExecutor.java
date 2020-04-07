@@ -1,4 +1,4 @@
-package com.example.concurrents;
+package com.radish.concurrents;
 
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;

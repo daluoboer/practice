@@ -1,4 +1,4 @@
-package com.example.leetcode;
+package com.radish.leetcode;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,7 +16,7 @@ import java.util.Scanner;
  *
  * 示例1
  * 输入
- * 复制
+ * 复制R
  * abcd
  * 输出
  * 复制

@@ -1,4 +1,4 @@
-package com.example.proxy;
+package com.radish.proxy;
 
 /**
  * @Description

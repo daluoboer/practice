@@ -1,4 +1,4 @@
-package com.example.testTimerTask;
+package com.radish.testTimerTask;
 
 import java.util.Timer;
 import java.util.TimerTask;

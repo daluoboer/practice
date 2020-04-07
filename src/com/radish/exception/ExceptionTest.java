@@ -1,4 +1,4 @@
-package com.example.exception;
+package com.radish.exception;
 
 /**
  * @Description

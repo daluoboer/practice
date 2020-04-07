@@ -1,4 +1,4 @@
-package com.example.leetcode.dynamic;
+package com.radish.leetcode.dynamic;
 
 import java.util.ArrayList;
 import java.util.Scanner;

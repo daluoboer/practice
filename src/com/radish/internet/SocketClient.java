@@ -1,4 +1,4 @@
-package com.example.internet;
+package com.radish.internet;
 
 import java.io.InputStream;
 import java.io.OutputStream;

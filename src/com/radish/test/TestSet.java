@@ -1,4 +1,4 @@
-package com.example.test;
+package com.radish.test;
 
 import java.math.BigInteger;
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.example.concurrents;
+package com.radish.concurrents;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.example.collections;
+package com.radish.collections;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
