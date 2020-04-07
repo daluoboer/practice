@@ -11,7 +11,140 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/radish/thinking/unit19/OverrideConstantSpecific.java" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21bd52ec-48af-455e-807b-261fe8fe047c" name="Default Changelist" comment="" />
+    <list default="true" id="21bd52ec-48af-455e-807b-261fe8fe047c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/classLoader/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/classLoader/FinalizeEscapeGC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/classLoader/StaticDispatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/collections/CollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/AtomicIntegerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Atomicity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/AtomicityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/AttemptLocking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CallableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CaptureUncaughtException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CloseResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ConditionUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CountDownLatchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CreateThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CreateTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/CriticalSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DaemonFromFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DaemonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DaemonThreadFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DaemonThreadPoolExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Daemons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DaemonsDontRunFinally.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/DelayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/EvenChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/EvenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ExceptionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ExecutorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ExecutorTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ExplicitCriticalSection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/GreenHouseSchedular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/HorseRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/IntGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/InterruptTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Interrupting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Interrupting2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/InterruptingIdiom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/JoinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Joining.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/LiftOff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/MultiLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/MutexEvenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/NIOInterruption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/NaiveExceptionHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/NotifyVSNotifyAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/OrnamentalGarden.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/PipedIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ResponsibveUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SelfManaged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SerialNumberChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SerialNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SettingDefaultHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SimplePriorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SimpleThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SleepWaitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SleepingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SyncObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/SynchronizedEvenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/TestBlockingQueues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/TestSleep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/TestThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/TestTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ThreadGroupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ThreadLocalVariableHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ThreadVariations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/ToastOMatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/VolatileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/WaitNotifyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/concurrents/WaxOMatic2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Baowen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Baowen2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/BaowenHe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/GetIndexInArrayByN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Gougu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/InsertNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Rongliang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Rongliang2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/Temp2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/examine/TempHe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/exception/ExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/internet/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/internet/SocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/internet/TalkClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/internet/TalkServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/internet/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/io/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Approximate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/CharNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/FanXu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/FanZhuan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Indexes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/LargestSumOfAverages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/NoRepeat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/OneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Prime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/SodaWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/SortString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/dynamic/Shopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/dynamic/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/interesting/SumNums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/DetectCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/HasCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/InterSectionNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/IsPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/OddEvenList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/RemoveElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/RemoveNthFromEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/listNodes/ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/structure/Erfen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/tree/BuildTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/tree/PreorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/tree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/leetcode/tree/VerifyBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/proxy/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/proxy/HelloWorldHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/proxy/HelloWorldImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/proxy/ReflectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/proxy/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/FirstQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/ShiLiu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/SplitString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/TestScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/test/TestSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/radish/testTimerTask/TestTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,8 +217,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/radish/leetcode/learning/SwapPairs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="525">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -142,6 +275,10 @@
       <replace>println(</replace>
       <replace>&quot;</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -206,6 +343,13 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
@@ -220,19 +364,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="radish" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="radish" type="462c0819:PsiDirectoryNode" />
+              <item name="classLoader" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,12 +398,13 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="bindphone&#9;null&#9;null&#10;wxa&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561102387540" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML&#10;JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -575,11 +727,14 @@
       <workItem from="1579585877556" duration="2251000" />
       <workItem from="1581386521367" duration="2239000" />
       <workItem from="1586159244619" duration="1826000" />
+      <workItem from="1586161437201" duration="765000" />
+      <workItem from="1586227460189" duration="293000" />
+      <workItem from="1586240672401" duration="513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="908266000" />
+    <option name="totallyTimeSpent" value="909837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,9 +747,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.30674517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.2821199" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -610,8 +764,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49892932" weight="0.32964602" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.17035398" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010707" side_tool="true" weight="0.4568584" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49785867" visible="true" weight="0.17146018" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214136" side_tool="true" visible="true" weight="0.17146018" />
       <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32964602" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1194,8 +1348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/radish/leetcode/learning/SwapPairs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="525">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
