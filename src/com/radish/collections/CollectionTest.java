@@ -1,7 +1,5 @@
 package com.radish.collections;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
