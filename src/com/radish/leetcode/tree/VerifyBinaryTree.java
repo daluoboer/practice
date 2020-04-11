@@ -1,6 +1,5 @@
 package com.radish.leetcode.tree;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -39,10 +38,15 @@ import java.util.HashMap;
 
 public class VerifyBinaryTree {
     public static void main(String[] args) {
-        TreeNode nodeByList = PreorderTraversal.getNodeByList(Arrays.asList(1, 2, 3, 4, 5));
+        TreeNode node = new TreeNode(5);
+        node.left = new TreeNode(12);
+//        node.right = new TreeNode(2);
+        node.left.left = new TreeNode(1);
+        boolean validBST = isValidBST(node);
+        System.out.println(validBST);
     }
     public static boolean isValidBST(TreeNode root) {
-        if (root == null) return false;
+        if (root == null) return true;
         //先用最笨的方法好了，最笨的方法写出来再进行优化
         //1.先找到最底层的树，从下判断是不是一棵树，并返回该树的最值，然后逐层往上迭代。
         HashMap<String, Object> map = validTree(root);
@@ -72,7 +76,7 @@ public class VerifyBinaryTree {
             }
             //如果子树是二叉搜索树，需要判断子树的最大值是否小于根节点
             Integer maxLeft = (int) mapL.get("max");
-            if (maxLeft > root.val) {
+            if (maxLeft >= root.val) {
                 mapL.put("valid",false);
                 return mapL;
             }
@@ -82,7 +86,7 @@ public class VerifyBinaryTree {
             map.put("min",min < root.val?min:root.val);
             if (right == null) {
                 //如果右树为空，则最大值也在这儿
-                map.put("max",maxLeft);
+                map.put("max",maxLeft > root.val?maxLeft:root.val);
             }
         }
 
@@ -95,7 +99,7 @@ public class VerifyBinaryTree {
             }
             //如果子树是二叉搜索树，需要判断子树的最小值是否大于根节点
             int minRight = (int) mapR.get("min");
-            if (minRight < root.val){
+            if (minRight <= root.val){
                 mapR.put("valid",false);
                 return mapR;
             }
@@ -103,7 +107,7 @@ public class VerifyBinaryTree {
             int max = (int) mapR.get("max");
             map.put("max",max > root.val? max : root.val);
             if (left == null) {
-                map.put("min",minRight);
+                map.put("min",minRight < root.val ? minRight : root.val);
             }
         }
 

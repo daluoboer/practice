@@ -23,6 +23,8 @@ public class CollectionTest {
 
         ThreadLocal<String> threadLocal = new ThreadLocal<>();
 
+        Hashtable<String, String> stringStringHashtable = new Hashtable<>();
+
         ConcurrentHashMap<Object, Object> concurrentHashMap = new ConcurrentHashMap<>();
 
         Executors.newFixedThreadPool(10);
