@@ -1,11 +1,5 @@
 package com.radish.thinking.unit11;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
-import java.awt.*;
-import java.io.PrintStream;
-import java.util.*;
-import java.util.Stack;
 
 public class StackTestJava {
     public static void main(String[] args) {

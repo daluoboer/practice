@@ -1,6 +1,7 @@
 package com.radish.leetcode.tree;
 
-import java.util.List;
+import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @Description
@@ -38,30 +39,77 @@ import java.util.List;
 
 public class VerifyBinaryTree {
     public static void main(String[] args) {
-
+        TreeNode nodeByList = PreorderTraversal.getNodeByList(Arrays.asList(1, 2, 3, 4, 5));
     }
-    public boolean isValidBST(TreeNode root) {
-        if (root==null) return false;
-        //左子树是否是二叉搜索树
-        if (root.left != null) {
-            if (root.left.val>=root.val) return false;
+    public static boolean isValidBST(TreeNode root) {
+        if (root == null) return false;
+        //先用最笨的方法好了，最笨的方法写出来再进行优化
+        //1.先找到最底层的树，从下判断是不是一棵树，并返回该树的最值，然后逐层往上迭代。
+        HashMap<String, Object> map = validTree(root);
+        boolean valid = (boolean) map.get("valid");
+        return valid;
+    }
 
+    //带上子树的最值返回
+    public static HashMap<String,Object> validTree(TreeNode root) {
+        HashMap<String,Object> map = new HashMap<>();
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        //左右子树都没有下一层了
+        map.put("valid",true);
+        if (left == null && right == null) {
+            //这是底层了
+            map.put("max",root.val);
+            map.put("min",root.val);
         }
-        //右子树是否是二叉搜索树
-        if (root.right !=  null) {
-            if (root.right.val<=root.val) return false;
-            if (!isValidBST(root.right)) return false;
+
+        if (left != null) {
+            HashMap<String, Object> mapL = validTree(left);
+            boolean valid = (boolean) mapL.get("valid");
+            //如果有子树不是二叉搜索树，直接返回该结果即可
+            if (!valid) {
+                return mapL;
+            }
+            //如果子树是二叉搜索树，需要判断子树的最大值是否小于根节点
+            Integer maxLeft = (int) mapL.get("max");
+            if (maxLeft > root.val) {
+                mapL.put("valid",false);
+                return mapL;
+            }
+            //如果子树是二叉搜索树，并且子树的最大值小于根节点的值，更新要返回的树最小值（左树包含最小值啊）
+//            map.put("max",root.val);
+            int min = (int) mapL.get("min");
+            map.put("min",min < root.val?min:root.val);
+            if (right == null) {
+                //如果右树为空，则最大值也在这儿
+                map.put("max",maxLeft);
+            }
         }
-        return true;
+
+        if (right != null) {
+            HashMap<String, Object> mapR = validTree(right);
+            //如果有子树不是二叉搜索树，直接返回结果
+            boolean valid = (boolean) mapR.get("valid");
+            if (!valid) {
+                return mapR;
+            }
+            //如果子树是二叉搜索树，需要判断子树的最小值是否大于根节点
+            int minRight = (int) mapR.get("min");
+            if (minRight < root.val){
+                mapR.put("valid",false);
+                return mapR;
+            }
+            //如果子树是二叉搜索树，且该树最小值大于根节点，更新该树最小值
+            int max = (int) mapR.get("max");
+            map.put("max",max > root.val? max : root.val);
+            if (left == null) {
+                map.put("min",minRight);
+            }
+        }
+
+        return map;
     }
 
-    /*要获取左子树最大值，右子树最小值，需要从树的最底层向上遍历？*/
-    public static List<Integer> validLeftBST(TreeNode root){
 
-        return null;
-    }
-
-    /*或者从上往下遍历，记录需要大于的最大数和需要小于的最小数*/
-    /*e...先吃饭吧！*/
 
 }
