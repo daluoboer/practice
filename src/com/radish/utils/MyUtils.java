@@ -14,4 +14,13 @@ public class MyUtils {
             System.out.print(i + ", ");
         System.out.println("\n");
     }
+
+    public static void print(int[][] nums) {
+        for (int[] arr : nums) {
+            for (int i : arr) {
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+        }
+    }
 }

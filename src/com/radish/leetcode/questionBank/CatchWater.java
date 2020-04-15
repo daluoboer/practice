@@ -49,4 +49,11 @@ public class CatchWater {
         }
         return water;
     }
+
+
+    //另一种方法：一行一行取雨水
+    public int trap2(int[] height) {
+        return 0;
+    }
+
 }
