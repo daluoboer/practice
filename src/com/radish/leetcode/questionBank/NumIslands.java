@@ -31,6 +31,8 @@ public class NumIslands {
     011101
     000010
     000100*/
+
+    /*这个是广度优先搜索噢！先把广度优先搜索看了*/
     public int numIslands(char[][] grid) {
         /*记录当前是水还是岛屿，发生变化时应当判断周围环境*/
         int curStatus = grid[0][0];
