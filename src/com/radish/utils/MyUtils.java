@@ -9,10 +9,10 @@ package com.radish.utils;
 public class MyUtils {
     private static int counter = 0;
     public static void print(int[] nums) {
-        System.out.println("----------" + ++counter + "----------");
+        System.out.print("[");
         for (int i : nums)
             System.out.print(i + ", ");
-        System.out.println("\n");
+        System.out.print("]\n");
     }
 
     public static void print(int[][] nums) {
