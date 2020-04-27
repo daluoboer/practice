@@ -22,6 +22,7 @@ package com.radish.leetcode.listNodes;
 
 public class MergeKLists {
     public static void main(String[] args) {
+        /*I am not good!*/
         ListNode nodeList = ListNode.createNodeList(new int[]{1, 2, 3}, -1);
         ListNode nodeList1 = ListNode.createNodeList(new int[]{0, 2, 3}, -1);
         ListNode nodeList2 = ListNode.createNodeList(new int[]{1, 4, 6}, -1);
