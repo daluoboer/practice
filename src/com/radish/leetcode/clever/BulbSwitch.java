@@ -24,7 +24,7 @@ package com.radish.leetcode.clever;
 
 public class BulbSwitch {
     public static void main(String[] args) {
-        int num = 10000;
+        int num = 10;
 //        long start = new Date().getTime();
         System.out.println("\n" + bulbSwitch1(num));
         System.out.println("\n" + bulbSwitch(num));
@@ -34,13 +34,14 @@ public class BulbSwitch {
 
     //e....看来不是刚好平方的数就行哎，有的时候不对，哎，不管，先提交试试
     //哈？真的是！为啥呢
+    //哎呀呀呀！因为如果一个数有约数，就是说它是另外两个数的乘积呗！
+    //在小学数学里，两个正整数相乘，那么这两个数都叫做积的因数，或称为约数。e.....果然是脑筋急转弯哈哈哈哈哈哈
     public static int bulbSwitch1(int n) {
+//        return (int)Math.sqrt(n);
         int result = 0;
         for (int i = 1; i <= n; i++) {
-            int sqrt = (int) Math.sqrt(i);
-            if ( sqrt*sqrt == i ) {
-                result++;
-            }
+            if (i * i < n) result++;
+            else break;
         }
         return result;
     }
@@ -63,7 +64,7 @@ public class BulbSwitch {
             }
         }
 
-        int i = 1;
+        /*int i = 1;
         for (boolean b : bulbs) {
             if (b) System.out.println();
             System.out.print(i++ + "." + b + " ");
@@ -73,7 +74,7 @@ public class BulbSwitch {
         for (int j : nums) {
             if (j%2 != 0) System.out.println();
             System.out.print(i++ + ":" + j + " ");
-        }
+        }*/
 
         times = 0;
         for (boolean b : bulbs) {
