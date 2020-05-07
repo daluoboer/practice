@@ -1,9 +1,8 @@
 package com.radish.io;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import com.radish.utils.MyUtils;
+
+import java.math.BigDecimal;
 
 /**
  * @Description
@@ -13,7 +12,45 @@ import java.io.IOException;
 
 public class Test {
     public static void main(String[] args) {
-        FileOutputStream out = null;
+        /*Random random = new Random();
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(random.nextInt(90) + 10);
+        }*/
+
+
+//        System.out.println(1 == new Integer(1));
+
+
+        System.out.println(new BigDecimal(0.00).setScale(2, BigDecimal.ROUND_HALF_UP));
+        System.out.println(BigDecimal.ZERO);
+        System.out.println(new BigDecimal("0.00"));
+        System.out.println(new BigDecimal(0));
+
+        int[] arr1 = new int[10];
+        int[] arr2 = new int[20];
+        for (int i = 0; i < arr2.length; i++) {
+            arr2[i] = i;
+        }
+        System.arraycopy(arr2,5,arr1,1,5);
+
+        MyUtils.print(arr2);
+        MyUtils.print(arr1);
+        /*Scanner in = new Scanner(System.in);
+        while (in.hasNext()) {
+            int i = in.nextInt();
+            //位运算算出一个两位数
+            while (i > 1<<7) {
+                i = i>>1;
+            }
+            System.out.println(i);
+        }*/
+
+        /*FileOutputStream out = null;
         FileInputStream in = null;
         try {
             out = new FileOutputStream(new File("111.txt"));
@@ -29,7 +66,7 @@ public class Test {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
 
         //
