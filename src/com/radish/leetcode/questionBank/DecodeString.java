@@ -31,6 +31,7 @@ public class DecodeString {
      * @return
      */
     public static String decodeString(String s) {
+        //应该找到一个]，然后找到跟它配对的[,然后解析，啊！是不是可以用队列呀！对哦！
         return null;
     }
 

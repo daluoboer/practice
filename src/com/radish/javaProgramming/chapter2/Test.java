@@ -23,6 +23,10 @@ public class Test {
         System.out.println(0111);
         //十六进制以0x或0X开头
         System.out.println(0x10);
+        System.out.println(5.0/9);
+        System.out.println(6.0/9);
+        System.out.println(6/9.0);
+        System.out.println(6/9);
     }
 
     public final void a(){

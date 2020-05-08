@@ -30,6 +30,7 @@ public class Test {
         System.out.println(BigDecimal.ZERO);
         System.out.println(new BigDecimal("0.00"));
         System.out.println(new BigDecimal(0));
+        System.out.println(new BigDecimal(0.00));
 
         int[] arr1 = new int[10];
         int[] arr2 = new int[20];
