@@ -42,7 +42,7 @@ import java.util.List;
 public class GenerateTrees {
     public List<TreeNode> generateTrees(int n) {
         /*二叉搜索树：左子树小，右子树大，给个n你自己生成几棵树
-        这个问题咋似曾相识呢
+        这个问题咋似曾相识呢....e....因为前几天没有做出来啊....
 
          */
         return null;
