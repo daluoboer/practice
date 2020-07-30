@@ -1,5 +1,8 @@
 package com.radish.leetcode.array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @description SplitArray
  *
@@ -31,6 +34,31 @@ package com.radish.leetcode.array;
 
 public class SplitArray {
     public int splitArray(int[] nums, int m) {
+        //最好的情况就是m个数组和相等，那最大值肯定最小了啊~就是让每一个数组之和最接近平均数嘛~
+        int sum = 0;
+        for (int i : nums) {
+            sum += i;
+        }
+        double average = sum / m;
+
+        List<List<Integer>> resultSubs = new ArrayList<>();
+        for (int i = 0; i < m; i++) {
+            ArrayList<Integer> list = new ArrayList<>(nums.length/m);
+
+        }
+
         return 0;
     }
+
+    public int splitT(int[] nums, int startIndex, double average, ArrayList<Integer> list) {
+        int sum = 0;
+        for (int i = startIndex; i < nums.length && sum < average; i++) {
+            sum += nums[i];
+            list.add(nums[i]);
+        }
+        //比较一下当前数组最接近平均值的总和，可是可能会影响下一个数组的和啊
+        //哦你错啦！应该用用动态规划啊！
+        return 0;
+    }
+
 }
