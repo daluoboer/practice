@@ -38,13 +38,39 @@ import java.util.HashMap;
 
 public class VerifyBinaryTree {
     public static void main(String[] args) {
-        TreeNode node = new TreeNode(5);
-        node.left = new TreeNode(12);
-//        node.right = new TreeNode(2);
-        node.left.left = new TreeNode(1);
-        boolean validBST = isValidBST(node);
+        TreeNode node = new TreeNode(10);
+        node.left = new TreeNode(5);
+        node.right = new TreeNode(15);
+//        node.right.left = new TreeNode(6);
+        node.right.right = new TreeNode(20);
+        boolean validBST = isValidBST1(node);
         System.out.println(validBST);
     }
+
+    public static boolean isValidBST1(TreeNode root) {
+        if (root == null) return true;
+        //左子树是二叉搜索树
+        //右子树是二叉搜索树
+        return isGoodBST(root.left,root.val,null) && isGoodBST(root.right,null,root.val);
+        //左子树的值都小于root节点值
+        //右子树的值都大于root节点值
+    }
+
+    public static boolean isGoodBST(TreeNode node, Integer maxValue, Integer minValue) {
+        if (node == null) return true;
+        if (maxValue != null && node.val >= maxValue) return false;
+        if (minValue != null && node.val <= minValue) return false;
+        return isGoodBST(node.left, node.val,minValue) && isGoodBST(node.right,maxValue,node.val);
+    }
+
+
+
+
+    /**
+     * 呀，的确是很复杂呀，看人家写的可简单了，你先想想咋写，想不起来就看看人家咋写的
+     * @param root
+     * @return
+     */
     public static boolean isValidBST(TreeNode root) {
         if (root == null) return true;
         //先用最笨的方法好了，最笨的方法写出来再进行优化

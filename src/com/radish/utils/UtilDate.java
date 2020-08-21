@@ -1,9 +1,6 @@
-package com.radish.test;
-
-import com.radish.thinking.unit5.ArrayNew;
+package com.radish.utils;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 

@@ -49,6 +49,7 @@ package com.radish.leetcode.maths;
  */
 public class EggDrop {
     public int superEggDrop(int K, int N) {
-        return 0;
+        //二分查找？找几次
+        return (int) Math.round(Math.sqrt(N));
     }
 }

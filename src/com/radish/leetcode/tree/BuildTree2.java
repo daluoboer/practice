@@ -22,12 +22,15 @@ package com.radish.leetcode.tree;
  *    15   7
  *
  * @Author Radish
+ *
+ * 为啥要通过两种遍历确定一棵树，为啥一定有中序遍历？
  * @Date 2020-05-22 11:13:58
  */
 
 public class BuildTree2 {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         //怎样构造二叉树？先要确定数据，然后再构建树
+        //先找到根节点，再创建左右子树，中序遍历第一个就是根节点呀，然后找到前序遍历中根节点在哪儿，前面的就是左子树
         return null;
     }
 }

@@ -1,7 +1,6 @@
 package com.radish.leetcode.tree;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -44,13 +43,13 @@ public class PreorderTraversal {
         System.out.println(objects);*/
 
 
-        /*TreeNode node = new TreeNode(3);
-        node.left = new TreeNode(9);
-        node.right = new TreeNode(20);
-        node.right.left = new TreeNode(15);
+        TreeNode node = new TreeNode(1);
+        node.left = new TreeNode(2);
+        node.right = new TreeNode(3);
+        /*node.right.left = new TreeNode(15);
         node.right.right = new TreeNode(7);*/
 //        System.out.println(maxDepth(node));
-//        System.out.println(isSymmetric(node));
+        System.out.println(isSymmetric2(node));
         /*System.out.println(hasPathSum(node,12));
         TreeNode treeNode = new TreeNode(1);
         treeNode.left = new TreeNode(2);
@@ -70,7 +69,7 @@ public class PreorderTraversal {
         node1.left = new TreeNode(2);
         System.out.println(hasPathSum(node1,1));*/
 
-        TreeNode nodeByList = getNodeByList(Arrays.asList(1, 2, 3, 6, 4, 7));
+//        TreeNode nodeByList = getNodeByList(Arrays.asList(1, 2, 3, 6, 4, 7));
     }
 
     public static List<Integer> preorderTraversal1(TreeNode root) {
@@ -241,6 +240,42 @@ public class PreorderTraversal {
         }
         return 0;
     }
+
+    /*看看二叉树是否是镜像的*/
+    public static boolean isSymmetric2(TreeNode root) {
+        if (root == null) return true;
+        return isS2(root.left,root.right);
+    }
+
+    public static boolean isS2(TreeNode left, TreeNode right) {
+        if (left == null && right == null) return true;
+        if (left == null || right == null) return false;
+        return left.val == right.val && isS2(left.left,right.right) && isS2(left.right,right.left);
+    }
+
+    /*看看二叉树是否是镜像的  错的！！！！！！咋会这么想！！！！！！！*/
+    public static boolean isSymmetric1(TreeNode root) {
+        ArrayList<Integer> list = new ArrayList();
+        transfer(root, list);
+
+        int length = list.size();
+
+        for (int i = 0; i < length/2; i++) {
+            int a = list.get(i);
+            int b = list.get(length - i - 1);
+            if (a != b) return false;
+        }
+        return true;
+    }
+
+    public static void transfer(TreeNode node, List<Integer> list) {
+        //啊！你写的啥啊！遍历是对的，但是这样肯定是不对称的啊！！！！我的天哪，看来笔试是过不了了......罢了好好学习吧...
+        if (node == null) return;
+        list.add(node.val);
+        if (node.left != null) transfer(node.left,list);
+        if (node.right != null) transfer(node.right,list);
+    }
+
 
     /*看看二叉树是否是镜像的*/
     public static boolean isSymmetric(TreeNode root) {

@@ -45,7 +45,9 @@ import com.radish.utils.MyUtils;
 public class UpdateMatrix {
 
     public static void main(String[] args) {
-        int[][] ints = new int[][]{{1,1},{1,0}};
+//        int[][] ints = new int[][]{{1,1},{1,0}};
+//        int[][] ints = new int[][]{{1},{1},{0},{1},{1}};
+//        int[][] ints = new int[][]{{1,1,1},{1,0,1},{1,1,1}};
 //        int[][] ints = new int[][]{{0,0,0,1},{0,1,0,1},{1,1,1,0},{1,1,1,1}};
         /*int[][] ints = new int[][]{
                 {1,0,1,1,0,0,1,0,0,1},
@@ -59,65 +61,120 @@ public class UpdateMatrix {
                 {1,1,1,1,1,1,1,0,1,0},
                 {1,1,1,1,0,1,0,0,1,1}
         };*/
+
+        /*int[][] ints = new int[][]{
+                {1,1,0,0,1,0,0,1,1,0},
+                {1,0,0,1,0,1,1,1,1,1},
+                {1,1,1,0,0,1,1,1,1,0},
+                {0,1,1,1,0,1,1,1,1,1},
+                {0,0,1,1,1,1,1,1,1,0},
+                {1,1,1,1,1,1,0,1,1,1},
+                {0,1,1,1,1,1,1,0,0,1},
+                {1,1,1,1,1,0,0,1,1,1},
+                {0,1,0,1,1,0,1,1,1,1},
+                {1,1,1,0,1,0,1,1,1,1}
+        };*/
+
+        int[][] ints = new int[][]{
+                {1,1,0,1,1,1,1,1,1,1},
+                {1,1,0,1,1,1,1,1,1,1},
+                {1,1,1,1,0,0,0,1,1,0},
+                {1,1,1,1,1,1,0,0,1,0},
+                {1,0,0,1,1,1,0,1,0,1},
+                {0,0,1,0,0,1,1,0,0,1},
+                {0,1,0,1,1,1,1,1,1,1},
+                {1,0,0,1,1,0,0,0,0,0},
+                {0,0,1,1,1,1,0,1,1,1},
+                {1,1,0,0,1,0,1,0,1,1}
+        };
+        MyUtils.print(ints);
+        System.out.println("----------------------------------------------------");
         int[][] ints1 = updateMatrix(ints);
         MyUtils.print(ints1);
     }
 
 
     public static int[][] updateMatrix(int[][] matrix) {
-        int[][] result = new int[matrix.length][matrix.length];
+        //噢~~~你的想法不错，可是好像有点跑偏，因为你不知道0在哪儿，有多少0，所以第二遍遍历的时候可能会错，因为你不是计算的最近的0，而是直接取得周围的数的最小值
+        //应该是深度优先搜索或者广度优先搜索这种~不过已经根据你值即的想法做了很多优化啦！还是很棒棒滴！明天看看这个题解，学习一下深度优先搜索和广度优先搜索吧！
+        int[][] result = new int[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; i < matrix.length; j++) {
-                fillData(matrix,result,i,j);
+            for (int j = 0; j < matrix[0].length; j++) {
+                fillData(matrix,result,i,j,1);
+            }
+        }
+        MyUtils.print(result);
+        System.out.println("------------------------------------------------------------------------");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                fillData(matrix,result,i,j,2);
             }
         }
         return result;
     }
 
     //当有值被填充时，去查看前面的值是否可以进行填充
+    //不应该查看之前所有的值，那得遍历多少啊，应该只检查它的上下左右的值，只有这几个值才跟当前值有关
     public static void setBeforeData(int[][] matrix, int[][] result, int i, int j) {
-        for (int m = i,n = j-1; m >= 0; m--,n = matrix.length-1) {
-            for (; n >= 0; n--) {
-                fillData(matrix,result,m,n);
-            }
-        }
+        if (i > 0) fillData(matrix,result,i-1,j,1);
+        if (j > 0) fillData(matrix,result,i,j-1,1);
     }
 
-    public static void fillData(int[][] matrix, int[][] result, int i, int j) {
-        //应该求出一个值就去判断它前面应该走过的值有没有走过，如果没有走过就进行填充啊！
-        //当前值为0，直接填充
-        if (matrix[i][j] == 0) {
-            result[i][j] = 0;
-            //填充前面的值
-            setBeforeData(matrix,result,i,j);
+    public static void fillData(int[][] matrix, int[][] result, int i, int j, int index) {
+        if (result[i][j] > 0) {
             return;
         }
 
         //-1表示边缘，无需管这个值，-2表示该值未取到，需要往后遍历查找0
         int top = i > 0 ? (matrix[i-1][j] == 0 ? 0 : (result[i-1][j] > 0 ? result[i-1][j] : -2)) : -1;
         int left = j > 0 ? (matrix[i][j-1] == 0 ? 0 : (result[i][j-1] > 0 ? result[i][j-1] : -2)) : -1;
-        int down = i < matrix.length-1 ? (matrix[i+1][j] == 0 ? 0 : -2) : -1;
-        int right = j < matrix.length-1 ? (matrix[i][j+1] == 0 ? 0 : -2) : -1;
+        int down = i < matrix.length-1 ? (matrix[i+1][j] == 0 ? 0 : (result[i+1][j] > 0 ? result[i+1][j] : -2)) : -1;
+        int right = j < matrix[0].length-1 ? (matrix[i][j+1] == 0 ? 0 : (result[i][j+1] > 0 ? result[i][j+1] : -2)) : -1;
+        //跑第一遍的时候，只取可以取到的
+        if (index == 1) {
+            //应该求出一个值就去判断它前面应该走过的值有没有走过，如果没有走过就进行填充啊！
+            //当前值为0，直接填充
+            if (matrix[i][j] == 0) {
+                //填充前面的值
+                setBeforeData(matrix,result,i,j);
+                return;
+            }
 
-        //如果边上有0，直接填充
-        if (top == 0 || left == 0 || down == 0 || right == 0) {
-            result[i][j] = 1;
-            //填充前面的值
-            setBeforeData(matrix,result,i,j);
-            return;
+            //如果边上有0，直接填充
+            if (top == 0 || left == 0 || down == 0 || right == 0) {
+                result[i][j] = 1;
+                //填充前面的值
+                setBeforeData(matrix,result,i,j);
+                return;
+            }
+
+            //如果旁边有1，那就是1最近
+            if (top == 1 || left == 1 || down == 1 || right == 1) {
+                result[i][j] = 2;
+                //填充前面的值
+                setBeforeData(matrix,result,i,j);
+                return;
+            }
+
+            //上下左右的值都可以确定的话，当前值可以直接进行填充
+            if (top > -2 && left > -2 && down > -2 && right > -2) {
+                //好像没有人走这个？不，走了一次.....
+                //按说不能全是-1
+                int minW = getMinW(getMinW(top, left), getMinW(down, right));
+                result[i][j] = minW + 1;
+                //填充前面的值
+                setBeforeData(matrix,result,i,j);
+                return;
+            }
         }
 
-        //上下左右的值都可以确定的话，当前值可以直接进行填充
-        if (top > -2 && left > -2 && down > -2 && right > -2) {
-            //按说不能全是-1
+        //跑第二遍的时候，全部填充
+        if (index == 2 && matrix[i][j] != 0) {
             int minW = getMinW(getMinW(top, left), getMinW(down, right));
             result[i][j] = minW + 1;
-            //填充前面的值
             setBeforeData(matrix,result,i,j);
         }
     }
-
-
 
 
     //这种做法不太对哦，要从0扫，向外扩展
@@ -187,11 +244,11 @@ public class UpdateMatrix {
     }
 
     public static int getMinW(int i1, int i2) {
-        if (i1 == i2 && i1 == -1) {
+        if (i1 < 0 && i2 < 0) {
             return -1;
         }
-        if (i1 == -1 || i2 == -1) {
-            return i1 == -1 ? i2 : i1;
+        if (i1 < 0 || i2 < 0) {
+            return i1 < 0 ? i2 : i1;
         }
         return i1 > i2 ? i2 : i1;
     }

@@ -25,20 +25,21 @@ import com.radish.utils.MyUtils;
 
 public class SingleNumbers {
     public static void main(String[] args) {
-        int[] ints = singleNumbers(new int[]{1, 1, 2, 2, 3, 4,5,3,4,7});
+        int[] ints = singleNumbers(new int[]{1, 1, 2, 2, 3, 4, 5, 3, 4, 7});
         MyUtils.print(ints);
     }
+
     public static int[] singleNumbers(int[] nums) {
         int sum = 0;
         int[] res = new int[2];
-        for(int num : nums){
+        for (int num : nums) {
             sum ^= num;
         }
         int lowbit = sum & (-sum);
-        for(int num : nums){
-            if((num & lowbit) == 0){
+        for (int num : nums) {
+            if ((num & lowbit) == 0) {
                 res[0] ^= num;
-            }else{
+            } else {
                 res[1] ^= num;
             }
         }

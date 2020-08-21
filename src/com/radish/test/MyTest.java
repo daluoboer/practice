@@ -9,7 +9,7 @@ public class MyTest {
     public static void main(String[] args){
         ThreadLocalRandom random = ThreadLocalRandom.current();
         ThreadLocal threadLocal = new ThreadLocal();
-        /*MyTest.useEnum(Fruits.Apple);
+        MyTest.useEnum(Fruits.Apple);
         ConcurrentHashMap map = new ConcurrentHashMap();
         Map s = new HashMap();
         Map s1 = new Hashtable<String,String>();
@@ -21,7 +21,7 @@ public class MyTest {
         List<String> arrayList = new ArrayList<>();
         String str = "abcjdoeijfergocba";
         System.out.println(str.endsWith("cba"));
-        System.out.println(str.startsWith("abc"));*/
+        System.out.println(str.startsWith("abc"));
     }
 
     /**
