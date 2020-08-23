@@ -1,6 +1,5 @@
-package com.radish.leetcode;
+package com.radish.leetcode.bits;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**

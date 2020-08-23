@@ -1,10 +1,8 @@
-package com.radish.leetcode;
+package com.radish.leetcode.strs;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @Description

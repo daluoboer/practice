@@ -1,4 +1,4 @@
-package com.radish.leetcode;
+package com.radish.leetcode.matrix;
 
 /**
  * 面试题 01.07. 旋转矩阵

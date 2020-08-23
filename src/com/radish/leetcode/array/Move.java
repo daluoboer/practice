@@ -1,4 +1,4 @@
-package com.radish.leetcode;
+package com.radish.leetcode.array;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package com.radish.leetcode;
+package com.radish.leetcode.maths;
 
 import java.util.Scanner;
 

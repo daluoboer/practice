@@ -1,4 +1,4 @@
-package com.radish.leetcode;
+package com.radish.leetcode.chars;
 
 import java.util.HashSet;
 import java.util.Scanner;
