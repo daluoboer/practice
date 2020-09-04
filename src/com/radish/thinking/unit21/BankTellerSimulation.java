@@ -106,7 +106,7 @@ class Teller implements Runnable,Comparable<Teller> {
         return "Teller " + id + " ";
     }
     public String shortString() {
-        return "T" + id;
+        return "T1" + id;
     }
 
     @Override

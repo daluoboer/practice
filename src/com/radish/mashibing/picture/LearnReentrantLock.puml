@@ -1,0 +1,8 @@
+@startuml
+ReenTrantLock -> NonfairSync: Authentication Request
+
+NonfairSync --> Alice: Authentication Response
+
+Alice -> NonfairSync: Another authentication Request
+Alice <-- NonfairSync: another authentication Response
+@enduml

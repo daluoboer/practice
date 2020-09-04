@@ -52,7 +52,7 @@ public class Unsupported {
     }
 
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split(" "));
+        List<String> list = Arrays.asList("A B C D E F G H I J K L M N O P Q R S T1 U V W X Y Z".split(" "));
         test("Modifiable Copy",new ArrayList<String>(list));
         test("Arrays.asList()",list);
         test("unmodifiableList()", Collections.unmodifiableList(new ArrayList<String>(list)));

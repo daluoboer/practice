@@ -1,10 +1,10 @@
 /*
 package com.radish.thinking.unit15;
 
-class Manipulator<T> {
-    private T obj;
+class Manipulator<T1> {
+    private T1 obj;
 
-    public Manipulator(T obj) {
+    public Manipulator(T1 obj) {
         this.obj = obj;
     }
     public void manipulate() {obj.f();}

@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @Description
  * 磁盘容量排序
- * M G T 升序
+ * M G T1 升序
  * @Author Radish
  * @Date 2020/3/16
  */
@@ -32,7 +32,7 @@ public class Rongliang {
                     m.add(Integer.valueOf(strs[i].substring(0,strs[i].length()-1)));
                 } else if (strs[i].endsWith("G")){
                     g.add(Integer.valueOf(strs[i].substring(0,strs[i].length()-1)));
-                } else if (strs[i].endsWith("T")){
+                } else if (strs[i].endsWith("T1")){
                     t.add(Integer.valueOf(strs[i].substring(0,strs[i].length()-1)));
                 }
             }
@@ -46,7 +46,7 @@ public class Rongliang {
                 System.out.println(i + "G");
             }
             for (Integer i : t) {
-                System.out.println(i + "T");
+                System.out.println(i + "T1");
             }
 
         }

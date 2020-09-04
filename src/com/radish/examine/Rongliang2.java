@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @Description
  * 磁盘容量排序
- * M G T 升序
+ * M G T1 升序
  * @Author Radish
  * @Date 2020/3/16
  */
@@ -52,7 +52,7 @@ public class Rongliang2 {
             case "G":
                 o11 = o11 * 1000;
                 break;
-            case "T":
+            case "T1":
                 o11 = o11 * 1000000;
                 break;
         }
