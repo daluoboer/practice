@@ -1,17 +1,21 @@
 package com.radish.classLoader;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 /**
  * @Description
  * @Author Radish
  * @Date 2020/3/25
  */
 
-public class ClassLoaderTest {
+public class ClassLoaderTest{
+
     public static void main(String[] args) throws Exception{
-        ClassLoader myLoader = new ClassLoader() {
+        for (;;) {
+            for (int i = 0; i < 9600000; i++) {
+            }
+            Thread.sleep(1000);
+        }
+
+        /*ClassLoader myLoader = new ClassLoader() {
             @Override
             public Class<?> loadClass(String name) throws ClassNotFoundException {
                 try {
@@ -31,6 +35,10 @@ public class ClassLoaderTest {
 
         Object obj = myLoader.loadClass("com.radish.classLoader.ClassLoaderTest").newInstance();
         System.out.println(obj.getClass());
-        System.out.println(obj instanceof ClassLoaderTest);
+        System.out.println(obj instanceof ClassLoaderTest);*/
     }
+}
+
+class T {
+
 }
