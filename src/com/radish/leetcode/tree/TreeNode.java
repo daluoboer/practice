@@ -73,6 +73,7 @@ public class TreeNode {
      * @return
      */
     public static TreeNode convertArrToTree(Integer[] nums) {
+        if (nums.length == 0) return null;
         TreeNode[] nodes = new TreeNode[nums.length];
         //获取层数，根据层数，创建每一层元素,创建好的节点放到数组里，方便
         double depth = (Math.log(nums.length + 1) / Math.log(2));
