@@ -16,6 +16,11 @@ public class ListNode {
 
      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
+     public ListNode next(int x) {
+         next = new ListNode(x);
+         return next;
+     }
+
     @Override
     public String toString() {
          ListNode cur = next;
