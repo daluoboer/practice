@@ -16,6 +16,17 @@ public class ListNode {
 
      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
+     ListNode(int[] nums) {
+         if (nums.length > 0) {
+             this.val = nums[0];
+             ListNode cur = this;
+             for (int i = 1; i < nums.length; i++) {
+                 cur.next = new ListNode(nums[i]);
+                 cur = cur.next;
+             }
+         }
+     }
+
      public ListNode next(int x) {
          next = new ListNode(x);
          return next;
@@ -25,10 +36,10 @@ public class ListNode {
     public String toString() {
          ListNode cur = next;
          StringBuilder s = new StringBuilder(val + ", ");
-         while (cur != null) {
+         /*while (cur != null) {
              s.append(cur.val + ", ");
              cur = cur.next;
-         }
+         }*/
          return s.toString();
     }
 
