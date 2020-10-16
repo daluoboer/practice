@@ -1,4 +1,4 @@
-package com.radish.leetcode.array;
+package com.radish.leetcode.maths;
 
 import com.radish.utils.MyUtils;
 
