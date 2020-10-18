@@ -27,6 +27,7 @@ import java.util.Scanner;
 public class RemoveNthFromEnd {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        RemoveNthFromEnd r = new RemoveNthFromEnd();
         while (true) {
             System.out.println("请输入链表长度: \n");
             int length = in.nextInt();
@@ -38,12 +39,53 @@ public class RemoveNthFromEnd {
             ListNode nodeList = ListNode.createNodeList(nums, -1);
             System.out.println("您的链表创建完成：" + nodeList + ", 您要删除倒数第几个数？");
             int n = in.nextInt();
-            ListNode node = removeNthFromEnd(nodeList, n);
+            ListNode node = r.removeNthFromEnd(nodeList, n);
             System.out.println("处理结果：" + node);
 //            break;
         }
     }
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        //快慢指针，快指针计算节点总数，可以根据节点总数计算出该节点是正数第几个节点，此时慢指针在中点位置，如果n在前半部分，从head节点遍历即可，如果在后半部分，从慢节点处遍历即可
+        if (head == null) return null;
+        ListNode slow = head, fast = head;
+        int length = 1;
+        while (fast != null && fast.next != null) {
+            if (fast.next != null) {
+                length+=1;
+                if (fast.next.next != null) {
+                    length+=1;
+                }
+                fast = fast.next.next;
+            } else {
+                fast = fast.next;
+            }
+            slow = slow.next;
+        }
+        //得到length，获取index
+        //慢指针index
+        int slowI = (length - 1)/2 + (length - 1)%2;
+        int targetI = length - n;
+        if (targetI == 0) {
+            return head.next;
+        }
+
+        if (slowI > targetI-1) {
+            //从头开始遍历
+            slow = head;
+            slowI = 0;
+        }
+        //从slowI开始往后遍历
+        while (slowI < targetI-1) {
+            slow = slow.next;
+            slowI++;
+        }
+        //要删除的是slow节点
+        //啊！删除节点最重要的是找到上一个节点啊
+        slow.next = slow.next.next;
+        return head;
+    }
+    public static ListNode removeNthFromEndOld(ListNode head, int n) {
         //这个又跟双指针有啥关系勒？
         //喔好！知道啦！就是双指针走的比较快嘛！根据双指针可以知道链表的长度，如果倒数第n个在后面的话，慢指针直接过去就行，如果倒数第n个在前面一半，快指针从头遍历即可，所以所以一趟扫描就可以实现啦！
         ListNode fast = head;
