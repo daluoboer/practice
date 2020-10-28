@@ -1,6 +1,8 @@
 package com.radish.leetcode.array;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 /**
@@ -26,14 +28,35 @@ import java.util.List;
  * @Date 2020-04-25 10:42
  */
 public class Pernute {
+    public static void main(String[] args) {
+        Pernute p = new Pernute();
+        int[] ints = {1,2,3};
+        List<List<Integer>> permute = p.permute(ints);
+        System.out.println(permute);
+    }
 
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> lists = new ArrayList<>();
-        if (nums.length == 0) return lists;
-        //循环放？怎样获取全排列呢？把每个数在不同的位置进行组合，噢！第一个数可以放在哪几个位置上，然后后面的数可以放在哪几个位置上
-        //应该用递归吧？或者迭代？迭代跟递归有啥区别？就是先求出两个的组合，再求出两个+一个的组合，逐步增加
-        //
-        return null;
+        // nums.length个位置，第一个位置可以放0-n-1的数，第二个位置可以放剩下的数....
+        List<List<Integer>> res = new ArrayList<>();
+        boolean[] used = new boolean[nums.length];
+        Deque<Integer> path = new ArrayDeque<>();
+        dfs(0, path, used, nums, res);
+        return res;
+    }
+
+    private void dfs(int depth, Deque<Integer> path, boolean[] used, int[] nums, List<List<Integer>> res) {
+        if (depth == nums.length) {
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (used[i]) continue;
+            used[i] = true;
+            path.addLast(nums[i]);
+            dfs(depth+1, path, used, nums, res);
+            path.removeLast();
+            used[i] = false;
+        }
     }
 
 //    public List<List<Integer>> permute()permute
